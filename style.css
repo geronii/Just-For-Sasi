@@ -1,0 +1,71 @@
+.title{
+  position: relative;
+  vertical-align: top;
+  text-align: justify;
+  color: #fff8e7;
+  margin-bottom: 100px;
+  font-family: Georgia, Sans-Serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #ADD8E6;
+}
+.heart {
+  height: 70px;
+  width: 70px;
+  background: #ff0090;
+  position: relative;
+  transform: rotate(-45deg);
+  box-shadow: -10px 10px 90px #ff0090;
+  animation: heart 0.7s linear infinite;
+}
+@keyframes heart{
+  0%{
+      transform: rotate(-45deg) scale(1.07);
+  }
+  80%{
+      transform: rotate(-45deg) scale(0.9);
+  }
+  100%{
+      transform: rotate(-45deg) scale(0.9);
+  }
+}
+.heart:before{
+  content: '';
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  background: #ff0090;
+  top: -50%;
+  border-radius: 50px;
+  box-shadow: -10px -10px 90px #ff0090;
+}
+
+.heart:after{
+  content: '';
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  background: #ff0090;
+  right: -50%;
+  border-radius: 50px;
+  box-shadow: 10px 10px 90px #ff0090;
+}
+
+.message{
+  vertical-align: bottom;
+  text-align: center;
+  color: #fff8e7;
+  font-size: 18px;
+  margin-top: 80px;
+  font-family: Comic Sans MS, Sans-Serif;
+  
+}
